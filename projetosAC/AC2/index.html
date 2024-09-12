@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback para a página de perfil de Victor de Moura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Feedback para a página de perfil de Victor de Moura</h1>
+    </header>
+
+    <!-- Formulário de Feedback -->
+    <section id="formulario-feedback">
+        <h2>Nos dê seu feedback</h2>
+        <form action="#" method="post">
+            <!-- Dados Pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="source">Como você encontrou meu perfil?</label>
+                <select id="source" name="source">
+                    <option value="google">Google</option>
+                    <option value="social-media">Mídia social</option>
+                    <option value="friend">Amigo</option>
+                    <option value="other">Outros</option>
+                </select><br><br>
+            </fieldset>
+
+            <!-- Feedback -->
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <label for="comments">Comentários:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                <p>Você gostou do meu perfil?</p>
+                <label><input type="radio" name="like" value="sim"> Sim</label>
+                <label><input type="radio" name="like" value="nao"> Não</label>
+                <label><input type="radio" name="like" value="talvez"> Talvez</label><br><br>
+
+                <p>O que você gostou no perfil?</p>
+                <label><input type="checkbox" name="aspect" value="design"> Design</label>
+                <label><input type="checkbox" name="aspect" value="conteudo"> Conteúdo</label>
+                <label><input type="checkbox" name="aspect" value="usabilidade"> Facilidade de uso</label>
+                <label><input type="checkbox" name="aspect" value="outros"> Outros</label><br><br>
+            </fieldset>
+
+            <!-- Botões de Submissão -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+        </form>
+    </section>
+
+    <!-- Multimídia -->
+    <section id="multimidia">
+        <h2>Multimídia</h2>
+
+        <!-- Video -->
+    <h3>Meu vídeo favorito</h3>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/V2JUb6dV8w4" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+
+        <!-- Audio -->
+        <h3>Minha música favorita</h3>
+        <audio controls>
+            <source src="media\Audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </section>
+
+    <!-- Notas de Rodapé -->
+    <footer>
+        <p>Obrigado pelo seu feedback!</p>
+    </footer>
+</body>
+</html>
