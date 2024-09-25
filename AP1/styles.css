@@ -1,0 +1,449 @@
+/* Estilos Globais para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe 100% da altura da viewport */
+}
+
+/* Seção para títulos */
+h1, h2 {
+    margin: 0;
+}
+
+/* Estilo dos parágrafos */
+p {
+    margin: 10px 0;
+}
+
+/* ========================== HEADER ========================== */
+/* Barra de Navegação (Header) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(98, 98, 98);
+    padding: 1em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Estilo do nome da empresa no Header */
+h1 {
+    color: white;
+    font-size: 3em; /* Tamanho grande do título */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+/* Links do menu de navegação */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Responsividade do Header para Mobile */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+}
+
+/* ========================== ARTIGOS ========================== */
+/* Configurações dos artigos com textos justificados */
+article {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+    text-align: justify;
+}
+
+/* Títulos de artigos */
+article h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Texto de parágrafos nos artigos */
+article p {
+    font-size: 1.2em;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+/* ========================== GALERIA ========================== */
+/* Configuração da galeria flexível */
+.flex-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.flex-gallery figure {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Estilização das imagens da galeria */
+.flex-gallery img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.flex-gallery figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsividade da Galeria */
+@media (max-width: 600px) {
+    .flex-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-gallery figure {
+        margin: 10px 0;
+    }
+}
+
+/* ========================== GRID ========================== */
+/* Layout de Grid */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-layout div {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsividade do Grid */
+@media (max-width: 600px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================== RODAPÉ ========================== */
+/* Configuração geral do rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(98, 98, 98);
+    padding: 1em;
+    color: white;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Configuração dos ícones e títulos de redes sociais */
+.footer-social .social-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* Estilização dos links de redes sociais */
+.footer-social p {
+    margin: 0;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Efeito hover para os links das redes sociais */
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+/* Espaçamento entre os itens de redes sociais */
+.footer-social img,
+.footer-social p {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos títulos do rodapé */
+footer h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Centralizando os links no rodapé */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividade do Rodapé para Mobile */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+}
+
+/* ========================== SOBRE.HTML ========================== */
+/* Estilo específico para sobre.html */
+.about-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* ========================== SEÇÃO DOS PILARES ========================== */
+/* Seção dos Pilares */
+.pillars {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.pillar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Estilizando as imagens e vídeos com o mesmo tamanho */
+.pillar img, .pillar video {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Títulos e textos dos pilares */
+.pillar h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pillar p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+/* Responsividade dos pilares para Mobile */
+@media (max-width: 600px) {
+    .pillars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pillar {
+        margin-bottom: 20px;
+    }
+}
+
+/* ========================== SEÇÃO DE SERVIÇOS ========================== */
+/* Seção de Serviços */
+.services {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.service {
+    flex: 1;
+    background-color: #52b4e9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Mudança da fonte dos títulos dos pacotes */
+.service h3, .full-package h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.1em;
+}
+
+/* Pacote Completo */
+.full-package {
+    background-color: #8ded63;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.full-package p {
+    font-size: 1.1em;
+}
+
+/* Responsividade para Serviços */
+@media (max-width: 600px) {
+    .service-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+}
+
+/* ========================== SEÇÃO DE CONTATO ========================== */
+/* Seção de Contato */
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Botão de Envio */
+button[type="submit"] {
+    background-color: rgb(98, 98, 98);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* Efeito hover para o botão */
+button[type="submit"]:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+/* Responsividade para o Formulário */
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
