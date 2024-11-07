@@ -1,0 +1,117 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo a altura da tela */
+}
+
+/* Estilo do Título */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo do Formulário */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo dos Grupos de Formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo das Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilo dos Inputs e Textarea */
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo do Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Estilo do Botão de Envio */
+button[type="submit"] {
+    background-color: #28a745; /* Cor verde */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Botão desabilitado */
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Efeito ao passar o mouse sobre o botão habilitado */
+button[type="submit"]:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+/* Estilo das Mensagens de Erro */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Estilo para os campos inválidos */
+.invalid {
+    border-color: red;
+}
+
+/* Estilo do Spinner */
+#spinner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo da Pré-visualização da Imagem */
+#imagePreview {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Estilo da Exibição em Tempo Real */
+#liveDisplay {
+    margin-top: 20px;
+}
+
+#liveDisplay p {
+    color: #555;
+}

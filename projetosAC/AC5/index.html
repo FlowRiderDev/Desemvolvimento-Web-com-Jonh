@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com JavaScript</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Formulário de Contato</h1>
+
+    <!-- Formulário de contato -->
+    <form id="contactForm">
+        <!-- Campo de Nome -->
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Campo de Email -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Campo de Telefone com máscara -->
+        <div class="form-group">
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <!-- Campo de Seleção de Assunto -->
+        <div class="form-group">
+            <label for="subject">Assunto:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Selecione um assunto</option>
+                <option value="elogio">Elogio</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="sugestao">Sugestão</option>
+            </select>
+        </div>
+
+        <!-- Campo de Mensagem -->
+        <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <!-- Campo de Upload de Imagem -->
+        <div class="form-group">
+            <label for="image">Enviar Imagem:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+        </div>
+
+        <!-- Botão de Envio desabilitado inicialmente -->
+        <button type="submit" id="submitBtn" disabled>Enviar</button>
+    </form>
+
+    <!-- Área onde o spinner de carregamento será exibido -->
+    <div id="spinner" style="display: none;">
+        <!-- Você pode substituir o texto abaixo por uma imagem de spinner -->
+        <p>Enviando...</p>
+    </div>
+
+    <!-- Área de pré-visualização da imagem -->
+    <div id="imagePreview">
+        <!-- A pré-visualização da imagem será inserida aqui -->
+    </div>
+
+    <!-- Exibição dos dados digitados em tempo real -->
+    <div id="liveDisplay">
+        <p>Nome digitado: <span id="displayName"></span></p>
+        <p>Email digitado: <span id="displayEmail"></span></p>
+        <p>Mensagem digitada: <span id="displayMessage"></span></p>
+    </div>
+
+    <!-- Inclusão do arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
